@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Studio Ghibli Movies
+# Vet_Clinic Database
 
 > In this project I created a vet clinic database and query some values using SQL.
 
