@@ -43,6 +43,8 @@ CREATE TABLE owners (
     PRIMARY KEY (id)
 );
 
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
 --species table--
 
 CREATE TABLE species (
