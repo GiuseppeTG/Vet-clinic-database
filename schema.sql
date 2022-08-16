@@ -39,9 +39,10 @@ ADD CONSTRAINT fk_owner_id FOREIGN KEY(owner_id) REFERENCES owners(id);
 CREATE TABLE owners (
     id INT GENERATED ALWAYS AS IDENTITY,
     full_name VARCHAR(100) NOT NULL,
-    age INT NOT NULL,
+    age INT,
     PRIMARY KEY (id)
 );
+
 
 --species table--
 
@@ -61,6 +62,7 @@ CREATE TABLE vets (
     PRIMARY KEY (id)
 );
 
+
 --specializations table--
 
 CREATE TABLE specializations (
@@ -79,3 +81,6 @@ CREATE TABLE visits (
     CONSTRAINT fk_vets_id FOREIGN KEY(vet_id) REFERENCES vets(id)
 );
 
+CREATE INDEX index_animal_id_asc ON visits(animal_id ASC, vet_id ASC);
+CREATE INDEX index_vet_id_asc ON visits(vet_id ASC);
+CREATE INDEX index_owner_email_asc ON owners(email ASC);

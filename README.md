@@ -1,8 +1,8 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Vet_Clinic Database
 
 > In this project I created a vet clinic database and query some values using SQL.
+
+![](ERD.png)
 
 ## Built With
 
